@@ -110,18 +110,10 @@ homework/
 
 ## 3. 运行环境
 
-建议使用你当前项目约定的 `myenv-3.9` 环境：
+使用前请先安装项目所需依赖库：
 
 ```bash
-conda activate myenv-3.9
-cd /home/derder/homework
-python -m pip install -r requirements.txt
-```
-
-也可以直接使用解释器绝对路径：
-
-```bash
-/home/derder/miniconda3/envs/myenv-3.9/bin/python -m pip install -r /home/derder/homework/requirements.txt
+pip install -r requirements.txt
 ```
 
 ## 4. 配置说明
@@ -163,8 +155,8 @@ KNOWLEDGE_GRAPH_PATH=app/data/knowledge_graph_k12_merged.json
 ## 5. 启动方式
 
 ```bash
-cd /home/derder/homework
-/home/derder/miniconda3/envs/myenv-3.9/bin/python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+cd ~/homework
+~/miniconda3/envs/myenv-3.9/bin/python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 启动后访问：
@@ -270,14 +262,14 @@ KNOWLEDGE_GRAPH_PATH=/你的图谱文件路径.json
 运行全部测试：
 
 ```bash
-cd /home/derder/homework
-/home/derder/miniconda3/envs/myenv-3.9/bin/python -m pytest
+cd ~/homework
+~/miniconda3/envs/myenv-3.9/bin/python -m pytest
 ```
 
 如果你只想快速验证图谱与诊断主链路，可以跑：
 
 ```bash
-PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 /home/derder/miniconda3/envs/myenv-3.9/bin/python -m pytest -q tests/test_graph_service.py tests/test_pipeline.py
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 ~/miniconda3/envs/myenv-3.9/bin/python -m pytest -q tests/test_graph_service.py tests/test_pipeline.py
 ```
 
 ## 10. 当前实现边界

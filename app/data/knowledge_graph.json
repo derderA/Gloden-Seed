@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "name": "分数意义",
+      "subject": "数学",
+      "prerequisites": []
+    },
+    {
+      "name": "最小公倍数",
+      "subject": "数学",
+      "prerequisites": []
+    },
+    {
+      "name": "分数通分",
+      "subject": "数学",
+      "prerequisites": ["分数意义", "最小公倍数"]
+    },
+    {
+      "name": "分数约分",
+      "subject": "数学",
+      "prerequisites": ["分数意义", "最大公因数"]
+    },
+    {
+      "name": "最大公因数",
+      "subject": "数学",
+      "prerequisites": []
+    },
+    {
+      "name": "分数加法",
+      "subject": "数学",
+      "prerequisites": ["分数通分"]
+    },
+    {
+      "name": "圆面积公式",
+      "subject": "数学",
+      "prerequisites": []
+    },
+    {
+      "name": "圆柱体积",
+      "subject": "数学",
+      "prerequisites": ["圆面积公式", "体积概念"]
+    },
+    {
+      "name": "体积概念",
+      "subject": "数学",
+      "prerequisites": []
+    },
+    {
+      "name": "磁场方向",
+      "subject": "物理",
+      "prerequisites": ["磁感线"]
+    },
+    {
+      "name": "磁感线",
+      "subject": "物理",
+      "prerequisites": []
+    },
+    {
+      "name": "电磁场方向判断",
+      "subject": "物理",
+      "prerequisites": ["磁场方向", "空间想象力"]
+    },
+    {
+      "name": "空间想象力",
+      "subject": "通用能力",
+      "prerequisites": []
+    }
+  ]
+}

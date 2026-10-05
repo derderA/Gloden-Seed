@@ -1,0 +1,6 @@
+.env
+.envs
+__pycache__/
+.pytest_cache/
+app/uploads/
+app/data/analysis_history.json
